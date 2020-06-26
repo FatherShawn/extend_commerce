@@ -1,5 +1,5 @@
 /* global require */
-var gulp = require('gulp');
+const {series, src, dest } = require('gulp');
 var del = require('del');
 var rename = require('gulp-rename');
 var eslint = require('gulp-eslint');
@@ -26,45 +26,16 @@ var paths = {
   ]
 };
 
-gulp.task('clean', function () {
+function clean(cb) {
   'use strict';
-  return del(paths.clean);
-});
+  del(paths.clean);
+  cb()
+}
 
-gulp.task('sass-lint', function () {
-  'use strict';
-  return gulp.src(paths.sass.watch)
-    .pipe(sassLint({
-      files: {
-        ignore: [
-          'bower_components/**/*.scss',
-          'style/scss/normalize/**',
-          'style/scss/base/_fonts.scss',
-          'style/scss/styles.scss'
-        ]
-      },
-      rules: {
-        'no-ids': 0,
-        'nesting-depth': [1, {'max-depth': 4}],
-        'no-qualifying-elements': [1, {'allow-element-with-class': true}],
-        'force-element-nesting': 0,
-        'force-pseudo-nesting': 0,
-        'property-sort-order': 0,
-        'no-vendor-prefixes': 0,
-        'mixins-before-declarations': [1, {exclude: ['media']}],
-        'placeholder-in-extend': 0,
-        'single-line-per-selector': 0,
-        'no-misspelled-properties': [1, {'extra-properties': ['-webkit-overflow-scrolling']}],
-        'class-name-format': 0
-      }
-    }))
-    .pipe(sassLint.format())
-    .pipe(sassLint.failOnError());
-});
 
-gulp.task('sass', function () {
+function sassCompile(cb) {
   'use strict';
-  return gulp.src(paths.sass.main)
+  src(paths.sass.main)
     .pipe(sassGlob())
     .pipe(sourcemaps.init())
     .pipe(sass({
@@ -77,26 +48,10 @@ gulp.task('sass', function () {
       browsers: ['last 2 versions', 'IE >= 11']
     }))
     .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest(paths.css.root))
+    .pipe(dest(paths.css.root))
     .pipe(livereload());
-});
+  cb();
+}
 
-gulp.task('sourcemaps', function () {
-  'use strict';
-  return gulp.src(paths.sass.main)
-    .pipe(sassGlob())
-    .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(paths.css.root));
-});
-
-gulp.task('build', ['sass']);
-
-gulp.task('watch', ['build'], function () {
-  'use strict';
-  livereload.listen();
-  gulp.watch(paths.sass.watch, ['sass']);
-});
-
-gulp.task('default', ['build']);
+exports.build = sassCompile;
+exports.default = series(clean, sassCompile);

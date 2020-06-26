@@ -1,31 +1,24 @@
 {
-  "name": "tandon",
+  "name": "extend_commerce",
   "version": "1.0.0",
-  "description": "Base theme for NYU Tandon",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@bitbucket.org:digitalpulp/nyu-tandon.git"
-  },
+  "description": "Builder for Extending Commerce Talk",
   "main": "gulpfile.js",
-  "engines": {
-    "node": "4.4.4"
-  },
   "dependencies": {
     "del": "^2.2.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.0",
     "gulp-eslint": "^2.0.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.1",
-    "gulp-sass-glob": "^1.0.6",
-    "gulp-sourcemaps": "^2.1.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^1.5.3",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.1",
     "popper": "^1.0.1"
   },
   "devDependencies": {
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-livereload": "^3.8.1",
+    "gulp-livereload": "^4.0.2",
     "gulp-sass-lint": "^1.2.0",
     "support-for": "^1.0.6"
   },
