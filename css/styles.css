@@ -1,0 +1,255 @@
+/* This is a major third scale */
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #333;
+  -webkit-tap-highlight-color: transparent; }
+
+html {
+  font-size: 1.5em; }
+
+body {
+  font-weight: 200;
+  line-height: 1.45;
+  font-family: 'Droid Sans', sans-serif;
+  color: #333; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+img {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/*
+Global Styles
+*/
+/*
+    We display a fallback message for users with browsers that don't support
+    all the features required by it. All of the content will be still fully
+    accessible for them, but some more advanced effects would be missing.
+    When impress.js detects that browser supports all necessary CSS3 features,
+    the fallback-message style is hidden.
+*/
+.fallback-message {
+  font-family: sans-serif;
+  line-height: 1.3;
+  width: 780px;
+  padding: 10px 10px 0;
+  margin: 20px auto;
+  border: 1px solid #E4C652;
+  border-radius: 10px;
+  background: #EEDC94; }
+
+.fallback-message p {
+  margin-bottom: 10px; }
+
+.impress-supported .fallback-message {
+  display: none; }
+
+div.step {
+  position: relative;
+  width: 1440px;
+  height: 810px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  border: 4px solid #00aef0;
+  color: #333333;
+  line-height: 1.5; }
+  div.step.section {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+  div.step.title {
+    opacity: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+  div.step div.notes {
+    display: none; }
+
+div.slide-text {
+  margin-left: 180px;
+  margin-right: 180px; }
+  div.slide-text.centered {
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    div.slide-text.centered p {
+      text-align: center; }
+    div.slide-text.centered .image-centered {
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.codeship-ci {
+  display: -ms-flexbox;
+  display: flex; }
+  .codeship-ci pre {
+    -ms-flex: 1 1 50%;
+        flex: 1 1 50%;
+    padding: 0 10px; }
+
+a {
+  color: #2ec6ff;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+pre {
+  line-height: 1rem;
+  font-size: 0.64em; }
+
+/* Headers
+ */
+h1, h2, h3 {
+  text-align: center; }
+
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.44141em;
+  line-height: 1.4;
+  margin-bottom: 10px; }
+
+h2 {
+  font-size: 1.95312em;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 300; }
+
+/* Lists
+ */
+ul {
+  list-style-type: square; }
+
+dl {
+  margin-left: 0.8em; }
+
+dt {
+  color: #00aef0;
+  font-weight: 200; }
+
+dd a {
+  color: #EC008B; }
+
+/*
+Footer
+*/
+div#license {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1em;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  div#license img {
+    vertical-align: baseline;
+    margin-right: 2px; }
+  div#license .footer-text {
+    font-size: 0.64em; }
+
+.impress-enabled div.step {
+  opacity: 0;
+  border: none;
+  height: auto; }
+  .impress-enabled div.step.active {
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("../images/DP_Logo_square.jpg") no-repeat;
+    background-position: top right;
+    background-color: white; }
+  .impress-enabled div.step.section, .impress-enabled div.step.title.future {
+    opacity: 1; }
+  .impress-enabled div.step.section.past h1 {
+    opacity: 0; }
+
+.slide a.dp-link {
+  color: #00aef0; }
+
+#ahoy em {
+  font-size: 1.95312em; }
+
+div#questions h2 {
+  text-align: center; }
+
+div#questions div.slide-text {
+  text-align: center; }
+
+div#questions img#yoda {
+  max-height: 50%; }
+
+dl#resource-links dd {
+  font-size: 0.8em; }
+
+/*# sourceMappingURL=maps/styles.css.map */
