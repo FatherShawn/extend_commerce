@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="476px" height="150px" viewBox="0 0 476 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Letter" transform="translate(-55.000000, -141.000000)">
+            <g id="Group-2" transform="translate(56.000000, 141.000000)">
+                <g id="tiles/endpoint" transform="translate(355.000000, 55.000000)">
+                    <g id="Group">
+                        <g id="Rectangle-9" fill="#E4F3FF" stroke="#1787E0" stroke-width="2">
+                            <rect id="Rectangle" x="1" y="1" width="118" height="37" rx="8"></rect>
+                        </g>
+                        <text id="External-link" font-family="CircularStd-Medium, Circular Std" font-size="11" font-weight="400" letter-spacing="0.1833334" fill="#1787E0">
+                            <tspan x="33.414833" y="23">Controller</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Group" transform="translate(120.000000, 62.000000)">
+                    <g id="arrows/arrow-1">
+                        <g id="arrow-1">
+                            <line x1="1" y1="3" x2="233.411616" y2="3" id="Line" stroke="#1787E0" stroke-linecap="square"></line>
+                            <circle id="Oval" stroke="#1787E0" fill="#FFFFFF" cx="2.5" cy="3" r="2.5"></circle>
+                            <polygon id="Triangle" fill="#1787E0" points="232 5.5 232 0.5 235 3"></polygon>
+                        </g>
+                    </g>
+                    <g id="arrows/arrow-1" transform="translate(117.500000, 21.500000) scale(-1, 1) translate(-117.500000, -21.500000) translate(0.000000, 18.500000)">
+                        <g id="arrow-1">
+                            <line x1="1" y1="3" x2="233.411616" y2="3" id="Line" stroke="#1787E0" stroke-linecap="square"></line>
+                            <circle id="Oval" stroke="#1787E0" fill="#FFFFFF" cx="2.5" cy="3" r="2.5"></circle>
+                            <polygon id="Triangle" fill="#1787E0" points="232 5.5 232 0.5 235 3"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <g id="tiles/main-page">
+                    <g id="main-page" transform="translate(-1.000000, 0.000000)">
+                        <rect id="Rectangle-7" fill="#1787E0" x="0.991735537" y="0" width="120" height="150" rx="5"></rect>
+                        <path d="M0.991735537,14.9006623 L120.991736,14.9006623 L120.991736,144.991091 C120.991736,147.757435 118.754389,150 115.988262,150 L5.9952087,150 C3.23186678,150 0.991735537,147.767816 0.991735537,144.991091 L0.991735537,14.9006623 Z" id="Rectangle-7" fill="#E4F3FF"></path>
+                        <ellipse id="Oval-4" fill="#55B4FF" cx="8.42975207" cy="7.45033113" rx="2.47933884" ry="2.48344371"></ellipse>
+                        <ellipse id="Oval-4" fill="#55B4FF" cx="15.3719008" cy="7.45033113" rx="2.47933884" ry="2.48344371"></ellipse>
+                        <ellipse id="Oval-4" fill="#55B4FF" cx="22.3140496" cy="7.45033113" rx="2.47933884" ry="2.48344371"></ellipse>
+                        <text id="Page-Title" font-family="CircularStd-Medium, Circular Std" font-size="13" font-weight="400" letter-spacing="0.2166667" fill="#1787E0">
+                            <tspan x="18.5080342" y="85.5165563">User requests</tspan>
+                            <tspan x="46.6660344" y="101.516556">path</tspan>
+                        </text>
+                    </g>
+                </g>
+                <text id="Request" font-family="CircularStd-Medium, Circular Std" font-size="12" font-weight="400" fill="#1787E0">
+                    <tspan x="215" y="52">Request</tspan>
+                </text>
+                <text id="Response" font-family="CircularStd-Medium, Circular Std" font-size="12" font-weight="400" fill="#1787E0">
+                    <tspan x="211" y="106">Response</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

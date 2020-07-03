@@ -219,7 +219,6 @@ div#license {
     font-size: 0.64em; }
 
 .impress-enabled div.step {
-  opacity: 0;
   border: none;
   height: auto; }
   .impress-enabled div.step.active {
@@ -229,10 +228,12 @@ div#license {
     background: url("../images/DP_Logo_square.jpg") no-repeat;
     background-position: top right;
     background-color: white; }
-  .impress-enabled div.step.section, .impress-enabled div.step.title.future {
+  .impress-enabled div.step.section {
     opacity: 1; }
-  .impress-enabled div.step.section.past h1 {
-    opacity: 0; }
+    .impress-enabled div.step.section img {
+      width: 100%; }
+    .impress-enabled div.step.section.past h1, .impress-enabled div.step.section.future h1 {
+      opacity: 0; }
 
 .slide a.dp-link {
   color: #00aef0; }

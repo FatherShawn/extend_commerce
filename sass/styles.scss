@@ -259,7 +259,7 @@ div#license {
 
 .impress-enabled {
   div.step {
-    opacity: 0;
+    //opacity: 0;
     border: none;
     height: auto;
     &.active {
@@ -270,12 +270,17 @@ div#license {
       background-position: top right;
       background-color: white;
     }
-    &.section,
-    &.title.future {
+    &.section {
       opacity: 1;
-    }
-    &.section.past h1 {
-      opacity: 0;
+      img {
+        width: 100%;
+      }
+      &.past,
+      &.future {
+        h1 {
+          opacity: 0;
+        }
+      }
     }
   }
 }

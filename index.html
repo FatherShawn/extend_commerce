@@ -2,61 +2,81 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Development Automation</title>
+    <title>Extending Commerce</title>
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
     <link href="css/monokai-sublime.css" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico"  type="image/x-icon">
+    <link rel="mask-icon" href="favicon-safari-pinned.svg" color="#00A3DA">
 </head>
 <body class="impress-not-supported">
 <!-- This fallback message is only visible when there is `impress-not-supported` class on body. -->
 <div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified
+        version of this presentation.</p>
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 </div>
-<!-- impress default width is 1440:810 = 16:9-->
-<div id="impress" data-width="1440" data-height="810" data-transition-duration="2000">
-    <div id="overview" class="step" data-scale="2"></div>
-    <div id="title" class="step title" data-x="0" data-y="0">
+<!-- impress default width is 1440:810 = 16:9. My presentation laptop is 2880:1800 -->
+<div id="impress" data-width="1440" data-height="900" data-transition-duration="1500">
+<!--    <div id="overview" class="step" data-scale="2"></div>-->
+    <div id="title" class="step title" data-x="0" data-y="0" data-scale="3">
         <div class="slide-text centered">
-            <h1>Development Automation with Composer, Robo and Docker</h1>
-            <h2>The technology that powers the Ballast project</h2>
-            <p>Shawn Duncan, Technical Architect<br><a class="dp-link" href="https://www.digitalpulp.com">Digital Pulp</a></p>
+            <h1>Extending Commerce</h1>
+            <h2>Drupal's architecture in action</h2>
+            <p>Shawn Duncan, Technical Architect<br><a class="dp-link" href="https://www.digitalpulp.com">Digital
+                Pulp</a></p>
             <div id="license">
                 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-                    <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/>
+                    <img alt="Creative Commons License logo" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"/>
                 </a>
-                <span class="footer-text"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+                <span class="footer-text"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"></a><br/>This work is licensed under a <a
+                        rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
             </div>
         </div>
     </div>
-    <div class="step" id="intro" data-x="0" data-y="1900" data-z="-300">
+    <div class="step" id="intro" data-z="-300">
         <h2>Introduction</h2>
         <div class="slide-text">
             <ul>
                 <li>Drupal.org: <a href="https://www.drupal.org/u/fathershawn">FatherShawn</a></li>
                 <li>Twitter: <a href="https://twitter.com/FatherShawn">@FatherShawn</a></li>
-                <li>These slides: <a href="http://talks.shawnduncan.org/automation/">talks.shawnduncan.org/automation</a>
+                <li>These slides: <a
+                        href="http://talks.shawnduncan.org/automation/">talks.shawnduncan.org/automation</a>
                 </li>
             </ul>
         </div>
     </div>
-    <div id="sec-1" class="step section" data-x="2400" data-y="900">
+    <div id="coding-concepts" class="step section" data-x="0" data-y="1440">
         <div class="slide-text centered">
-            <h1>Section</h1>
-            <div class="image-centered"><img src=""></div>
+            <h1>Coding Concepts</h1>
+            <div class="image-centered"><img src="images/php_elephant.svg"></div>
         </div>
     </div>
-    <div id="questions" class="step" data-x="0" data-y="-1900" data-z="-300" data-autoplay="10">
+    <div id="drupal-architecture" class="step section" data-x="-2494" data-y="-1440">
+        <div class="slide-text centered">
+            <h1>Drupal Architecture</h1>
+            <div class="image-centered"><img src="images/EL_PANTONE.svg"></div>
+        </div>
+    </div>
+    <div id="commerce" class="step section" data-x="2494" data-y="-1440">
+        <div class="slide-text centered">
+            <h1>Extending Commerce</h1>
+            <div class="image-centered"><img src="images/DCLogo_only.png"></div>
+        </div>
+    </div>
+    <div id="questions" class="step" data-x="0" data-y="0" data-z="-600" data-autoplay="10">
         <h2>Open Q & A</h2>
         <div class="slide-text">
-            <p><strong>&OpenCurlyDoubleQuote;Heeded my words not, did you? Pass on what you have learned. Strength, mastery.&CloseCurlyDoubleQuote;</strong></p>
+            <p><strong>&OpenCurlyDoubleQuote;Heeded my words not, did you? Pass on what you have learned. Strength,
+                mastery.&CloseCurlyDoubleQuote;</strong></p>
             <img id="yoda" src="images/iu-2.jpeg">
-            <p><strong>&OpenCurlyDoubleQuote;But weakness, folly, failure also. Yes, failure most of all. The greatest teacher, failure is.&CloseCurlyDoubleQuote;</strong></p>
+            <p><strong>&OpenCurlyDoubleQuote;But weakness, folly, failure also. Yes, failure most of all. The greatest
+                teacher, failure is.&CloseCurlyDoubleQuote;</strong></p>
         </div>
     </div>
-    <div id="references" class="step" data-x="0" data-y="-1900" data-z="-600">
+    <div id="references" class="step" data-x="0" data-y="0" data-z="-900">
         <h2>References</h2>
         <div class="slide-text">
             <dl>
