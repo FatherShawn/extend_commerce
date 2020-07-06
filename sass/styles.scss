@@ -32,6 +32,7 @@ body {
   line-height: 1.45;
   font-family: 'Droid Sans', sans-serif;
   color: #333;
+  background-color: white;
 }
 
 /*
@@ -245,11 +246,8 @@ dd {
 Footer
 */
 div#license {
-  display: flex;
   margin-top: 1em;
-  justify-content: center;
   img {
-    vertical-align: baseline;
     margin-right: 2px;
   }
   .footer-text {
@@ -257,24 +255,75 @@ div#license {
   }
 }
 
+.timeline {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .php-release {
+    transition: all 200ms ease-in;
+
+    .timestamp {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: 100;
+      padding: 1em 40px 0px;
+      &:before{
+        content: '';
+        width: 25px;
+        height: 25px;
+        background-color: #ddd;
+        border-radius: 25px;
+        border: 1px solid #ddd;
+        margin-bottom: 1em;
+      }
+    }
+    &.shift {
+      .timestamp {
+        color: #00A3DA;
+        &:before {
+          background-color: #00A3DA;
+          border-color: #00A3DA;
+        }
+      }
+      h3 {
+        color: #00A3DA;
+      }
+    }
+    .release {
+      padding: 0px 40px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      transition: all 200ms ease-in;
+    }
+    h3 {
+      font-weight: 600;
+    }
+  }
+}
+
+
 .impress-enabled {
   div.step {
-    //opacity: 0;
+    opacity: 0;
     border: none;
     height: auto;
     &.active {
       opacity: 1;
       margin-left: auto;
       margin-right: auto;
-      background: url("../images/DP_Logo_square.jpg") no-repeat;
-      background-position: top right;
-      background-color: white;
+      background: transparent url("../images/DP_Logo_square.svg") no-repeat top left;
     }
     &.section {
       opacity: 1;
       img {
         width: 100%;
       }
+      background-image: unset;
       &.past,
       &.future {
         h1 {
@@ -287,6 +336,6 @@ div#license {
 
 
 @import "slides/cover";
-@import "slides/ahoy";
+@import "slides/intro";
 @import "slides/questions";
 @import "slides/resources";

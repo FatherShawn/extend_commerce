@@ -19,48 +19,178 @@
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 </div>
 <!-- impress default width is 1440:810 = 16:9. My presentation laptop is 2880:1800 -->
-<div id="impress" data-width="1440" data-height="900" data-transition-duration="1500">
+<div id="impress" data-width="1440" data-height="900" data-transition-duration="2000">
 <!--    <div id="overview" class="step" data-scale="2"></div>-->
-    <div id="title" class="step title" data-x="0" data-y="0" data-scale="3">
+    <div id="title" class="step title" data-x="0" data-y="0" data-scale="5">
         <div class="slide-text centered">
             <h1>Extending Commerce</h1>
             <h2>Drupal's architecture in action</h2>
             <p>Shawn Duncan, Technical Architect<br><a class="dp-link" href="https://www.digitalpulp.com">Digital
                 Pulp</a></p>
-            <div id="license">
-                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-                    <img alt="Creative Commons License logo" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"/>
-                </a>
-                <span class="footer-text"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"></a><br/>This work is licensed under a <a
-                        rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
-            </div>
         </div>
     </div>
-    <div class="step" id="intro" data-z="-300">
+    <div class="step" id="intro" data-rel-z="-300">
         <h2>Introduction</h2>
         <div class="slide-text">
             <ul>
                 <li>Drupal.org: <a href="https://www.drupal.org/u/fathershawn">FatherShawn</a></li>
                 <li>Twitter: <a href="https://twitter.com/FatherShawn">@FatherShawn</a></li>
                 <li>These slides: <a
-                        href="http://talks.shawnduncan.org/automation/">talks.shawnduncan.org/automation</a>
+                        href="http://talks.shawnduncan.org/extend_commerce">talks.shawnduncan.org/extend_commerce</a>
+                </li>
+            </ul>
+        </div>
+        <div id="license">
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                <img alt="Creative Commons License logo" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"/>
+            </a>
+            <span class="footer-text"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"></a>This work is licensed under a <a
+                    rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+        </div>
+    </div>
+    <div id="coding-concepts" class="step section" data-x="0" data-y="-1440" data-z="0">
+        <div class="slide-text centered">
+            <h1>Coding Concepts</h1>
+            <div class="image-centered"><img src="images/php_elephant.svg" alt="PHP elephant logo"></div>
+        </div>
+    </div>
+    <div class="step subsection" data-x="0" data-y="-360">
+        <div class="slide-text centered">
+            <h2>Interface, Class  & Object</h2>
+        </div>
+    </div>
+    <div class="step" data-x="-1036" data-y="-1744">
+        <h2>Interface, Class  & Object</h2>
+        <div class="slide-text">
+            <ul>
+                <li>Concepts implemented in a variety of programming languages.</li>
+                <li>PHP had rudimentary objects for some time, but a complete object model was first available in PHP 5</li>
+            </ul>
+        </div>
+        <div class="php-timeline">
+            <ul class="timeline" id="timeline">
+                <li class="php-release">
+                    <div class="release">
+                        <h3>PHP 1.0</h3>
+                    </div>
+                    <div class="timestamp">
+                        <span class="date">1995</span>
+                    </div>
+                </li>
+                <li class="php-release">
+                    <div class="release">
+                        <h3>PHP 4</h3>
+                    </div>
+                    <div class="timestamp">
+                        <span class="date">2000</span>
+                    </div>
+                </li>
+                <li class="php-release shift" aria-label="Full object model with this release.">
+                    <div class="release">
+                        <h3>PHP 5</h3>
+                    </div>
+                    <div class="timestamp">
+                        <span class="date">2004</span>
+                    </div>
+                </li>
+                <li class="php-release shift">
+                    <div class="release">
+                        <h3>PHP 7</h3>
+                    </div>
+                    <div class="timestamp">
+                        <span class="date">2015</span>
+                    </div>
+                </li>
+                <li class="php-release shift">
+                    <div class="release">
+                        <h3>PHP 7.4</h3>
+                    </div>
+                    <div class="timestamp">
+                        <span class="date">2019</span>
+                    </div>
                 </li>
             </ul>
         </div>
     </div>
-    <div id="coding-concepts" class="step section" data-x="0" data-y="1440">
-        <div class="slide-text centered">
-            <h1>Coding Concepts</h1>
-            <div class="image-centered"><img src="images/php_elephant.svg"></div>
+    <div class="step" data-x="909" data-y="-856">
+        <h2>3</h2>
+        <div class="slide-text">
+            <ul>
+                <li></li>
+            </ul>
         </div>
     </div>
-    <div id="drupal-architecture" class="step section" data-x="-2494" data-y="-1440">
+    <div class="step" data-x="-707" data-y="-2256">
+        <h2>4</h2>
+        <div class="slide-text">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="step" data-x="449" data-y="-458">
+        <h2>5</h2>
+        <div class="slide-text">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="step" data-x="-154" data-y="-2509">
+        <h2>6</h2>
+        <div class="slide-text">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="step" data-x="-154" data-y="-371">
+        <h2>7</h2>
+        <div class="slide-text">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="step" data-x="449" data-y="-2422">
+        <h2>8</h2>
+        <div class="slide-text">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="step" data-x="-707" data-y="-624">
+        <h2>9</h2>
+        <div class="slide-text">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="step" data-x="909" data-y="-2024">
+        <h2>10</h2>
+        <div class="slide-text">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="step" data-x="-1036" data-y="-1136">
+        <h2>11</h2>
+        <div class="slide-text">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div id="drupal-architecture" class="step section" data-x="-2494" data-y="1440" data-z="0">
         <div class="slide-text centered">
             <h1>Drupal Architecture</h1>
-            <div class="image-centered"><img src="images/EL_PANTONE.svg"></div>
+            <div class="image-centered"><img src="images/EL_PANTONE.svg" alt="Drupal logo"></div>
         </div>
     </div>
-    <div id="commerce" class="step section" data-x="2494" data-y="-1440">
+    <div id="commerce" class="step section" data-x="2494" data-y="1440" data-z="0">
         <div class="slide-text centered">
             <h1>Extending Commerce</h1>
             <div class="image-centered"><img src="images/DCLogo_only.png"></div>

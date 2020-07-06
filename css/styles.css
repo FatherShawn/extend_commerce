@@ -24,7 +24,8 @@ body {
   font-weight: 200;
   line-height: 1.45;
   font-family: 'Droid Sans', sans-serif;
-  color: #333; }
+  color: #333;
+  background-color: white; }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -207,39 +208,87 @@ dd a {
 Footer
 */
 div#license {
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 1em;
-  -ms-flex-pack: center;
-      justify-content: center; }
+  margin-top: 1em; }
   div#license img {
-    vertical-align: baseline;
     margin-right: 2px; }
   div#license .footer-text {
     font-size: 0.64em; }
 
+.timeline {
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .timeline .php-release {
+    transition: all 200ms ease-in; }
+    .timeline .php-release .timestamp {
+      margin-bottom: 20px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center;
+      font-weight: 100;
+      padding: 1em 40px 0px; }
+      .timeline .php-release .timestamp:before {
+        content: '';
+        width: 25px;
+        height: 25px;
+        background-color: #ddd;
+        border-radius: 25px;
+        border: 1px solid #ddd;
+        margin-bottom: 1em; }
+    .timeline .php-release.shift .timestamp {
+      color: #00A3DA; }
+      .timeline .php-release.shift .timestamp:before {
+        background-color: #00A3DA;
+        border-color: #00A3DA; }
+    .timeline .php-release.shift h3 {
+      color: #00A3DA; }
+    .timeline .php-release .release {
+      padding: 0px 40px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      position: relative;
+      transition: all 200ms ease-in; }
+    .timeline .php-release h3 {
+      font-weight: 600; }
+
 .impress-enabled div.step {
+  opacity: 0;
   border: none;
   height: auto; }
   .impress-enabled div.step.active {
     opacity: 1;
     margin-left: auto;
     margin-right: auto;
-    background: url("../images/DP_Logo_square.jpg") no-repeat;
-    background-position: top right;
-    background-color: white; }
+    background: transparent url("../images/DP_Logo_square.svg") no-repeat top left; }
   .impress-enabled div.step.section {
-    opacity: 1; }
+    opacity: 1;
+    background-image: unset; }
     .impress-enabled div.step.section img {
       width: 100%; }
     .impress-enabled div.step.section.past h1, .impress-enabled div.step.section.future h1 {
       opacity: 0; }
 
-.slide a.dp-link {
-  color: #00aef0; }
+#title {
+  background-image: unset; }
+  #title a.dp-link {
+    color: #00aef0; }
 
-#ahoy em {
-  font-size: 1.95312em; }
+div#intro {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
 
 div#questions h2 {
   text-align: center; }
