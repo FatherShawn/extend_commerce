@@ -22,11 +22,13 @@
 <div id="impress" data-width="1440" data-height="900" data-transition-duration="2000">
 <!--    <div id="overview" class="step" data-scale="2"></div>-->
     <div id="title" class="step title" data-x="0" data-y="0" data-scale="5">
-        <div class="slide-text centered">
-            <h1>Extending Commerce</h1>
-            <h2>Drupal's architecture in action</h2>
-            <p>Shawn Duncan, Technical Architect<br><a class="dp-link" href="https://www.digitalpulp.com">Digital
-                Pulp</a></p>
+        <div class="slide-content">
+            <div class="slide-text centered">
+                <h1>Extending Commerce</h1>
+                <h2>Drupal's architecture in action</h2>
+                <p>Shawn Duncan, Technical Architect<br><a class="dp-link" href="https://www.digitalpulp.com">Digital
+                    Pulp</a></p>
+            </div>
         </div>
     </div>
     <div class="step" id="intro" data-rel-z="-300">
@@ -49,9 +51,11 @@
         </div>
     </div>
     <div id="coding-concepts" class="step section" data-x="0" data-y="-1440" data-z="0">
-        <div class="slide-text centered">
-            <h1>Coding Concepts</h1>
-            <div class="image-centered"><img src="images/php_elephant.svg" alt="PHP elephant logo"></div>
+        <div class="slide-content">
+            <div class="slide-text centered">
+                <h1>Coding Concepts</h1>
+                <div class="image-centered"><img src="images/php_elephant.svg" alt="PHP elephant logo"></div>
+            </div>
         </div>
     </div>
     <div class="step subsection" data-x="0" data-y="-360">
@@ -113,18 +117,27 @@
         </div>
     </div>
     <div class="step" data-x="909" data-y="-856">
-        <h2>3</h2>
-        <div class="slide-text">
-            <ul>
-                <li></li>
-            </ul>
+        <h2>Interface</h2>
+        <div class="slide-content">
+            <div class="slide-text">
+                <ul>
+                    <li>Example: USB Specification</li>
+                    <li>Number of inputs</li>
+                    <li>Shape of the plug</li>
+                    <li>How the signals are structured</li>
+                </ul>
+            </div>
+            <div class="slide-image">
+                <img src="images/usb-3.2-spec.png" alt="The cover of the USB 3.2 specification document.">
+            </div>
         </div>
     </div>
     <div class="step" data-x="-707" data-y="-2256">
-        <h2>4</h2>
+        <h2>Interface</h2>
         <div class="slide-text">
             <ul>
-                <li></li>
+                <li>Defines methods that implementing classes must implement, including the kind of data passed to these methods.</li>
+                <li>Also define constant values which implementing classes cannot override.</li>
             </ul>
         </div>
     </div>
