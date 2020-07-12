@@ -112,7 +112,9 @@ a:hover {
 
 pre {
   line-height: 1rem;
-  font-size: 0.64em; }
+  font-size: 0.64em;
+  max-height: 540px;
+  overflow: scroll; }
 
 /* Headers
  */
@@ -169,6 +171,10 @@ div.step {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
+  div.step.subsection .slide-text h3 {
+    font-size: 2.44141em;
+    font-weight: 300;
+    color: #00A3DA; }
   div.step.title {
     display: -ms-flexbox;
     display: flex;
@@ -179,6 +185,14 @@ div.step {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
+  div.step .slide-title {
+    text-align: center;
+    font-size: 1.95312em;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 300;
+    color: #00A3DA; }
   div.step .slide-text {
     margin-left: 160px;
     margin-right: 160px; }
@@ -202,20 +216,14 @@ div.step {
       margin-right: 80px; }
     div.step .slide-content .slide-image {
       margin-left: 80px;
-      margin-right: 80px; }
+      margin-right: 80px;
+      min-width: 360px;
+      height: auto; }
       div.step .slide-content .slide-image img {
         max-width: 480px;
-        max-height: 1152px; }
+        max-height: 720px; }
   div.step div.notes {
     display: none; }
-
-.codeship-ci {
-  display: -ms-flexbox;
-  display: flex; }
-  .codeship-ci pre {
-    -ms-flex: 1 1 50%;
-        flex: 1 1 50%;
-    padding: 0 10px; }
 
 /*
 Footer
@@ -287,7 +295,7 @@ div#license {
     background-image: unset; }
     .impress-enabled div.step.section img {
       width: 100%; }
-    .impress-enabled div.step.section.past h1, .impress-enabled div.step.section.future h1 {
+    .impress-enabled div.step.section.past h2, .impress-enabled div.step.section.future h2 {
       opacity: 0; }
 
 #title {
@@ -314,5 +322,8 @@ div#questions img#yoda {
 
 dl#resource-links dd {
   font-size: 0.8em; }
+
+#controller-diagram {
+  margin-left: 0px; }
 
 /*# sourceMappingURL=maps/styles.css.map */

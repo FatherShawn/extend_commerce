@@ -141,6 +141,8 @@ a:hover {
 pre {
   line-height: 1rem;
   font-size: $text_down_two;
+  max-height: $slide_height * 0.6;
+  overflow: scroll;
 }
 
 /* Headers
@@ -207,12 +209,32 @@ div.step {
     align-items: center;
   }
 
+  &.subsection {
+    .slide-text {
+      h3 {
+        font-size: $text_up_four;
+        font-weight: 300;
+        color: #00A3DA;
+      }
+    }
+  }
+
   &.title {
     display: flex;
     opacity: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .slide-title {
+    text-align: center;
+    font-size: $text_up_three;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 300;
+    color: #00A3DA;
   }
 
   .slide-text {
@@ -243,9 +265,11 @@ div.step {
     .slide-image {
       margin-left: $slide_width/18;
       margin-right: $slide_width/18;
+      min-width: $slide_width/4;
+      height: auto;
       img {
         max-width: $slide_width/3;
-        max-height: $slide_width * 0.8;
+        max-height: $slide_height * 0.8;
       }
     }
   }
@@ -255,15 +279,6 @@ div.step {
   }
 }
 
-// Codeship
-.codeship-ci {
-  display: flex;
-
-  pre {
-    flex: 1 1 50%;
-    padding: 0 10px;
-  }
-}
 
 /*
 Footer
@@ -362,7 +377,7 @@ div#license {
 
       &.past,
       &.future {
-        h1 {
+        h2 {
           opacity: 0;
         }
       }
@@ -375,3 +390,7 @@ div#license {
 @import "slides/intro";
 @import "slides/questions";
 @import "slides/resources";
+
+#controller-diagram {
+  margin-left: 0px;
+}
