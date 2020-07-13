@@ -204,6 +204,8 @@ div.step {
       div.step .slide-text.centered p {
         text-align: center; }
       div.step .slide-text.centered .image-centered {
+        display: -ms-flexbox;
+        display: flex;
         -ms-flex-pack: center;
             justify-content: center; }
   div.step .slide-content {
@@ -317,11 +319,8 @@ div#questions h2 {
 div#questions div.slide-text {
   text-align: center; }
 
-div#questions img#yoda {
-  max-height: 50%; }
-
-dl#resource-links dd {
-  font-size: 0.8em; }
+div#questions #yoda {
+  height: 40vh; }
 
 #controller-diagram {
   margin-left: 0px; }
