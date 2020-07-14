@@ -221,7 +221,7 @@ div.step {
 
   &.title {
     display: flex;
-    opacity: 1;
+    //opacity: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -358,7 +358,8 @@ div#license {
   div.step {
     opacity: 0;
     border: none;
-    height: auto;
+    height: $slide_height;
+    width: $slide_width;
 
     &.active {
       opacity: 1;
@@ -368,20 +369,12 @@ div#license {
     }
 
     &.section {
-      opacity: 1;
-
       img {
         width: 100%;
       }
 
       background-image: unset;
 
-      &.past,
-      &.future {
-        h2 {
-          opacity: 0;
-        }
-      }
     }
   }
 }
